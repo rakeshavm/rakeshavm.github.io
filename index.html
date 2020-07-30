@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact V4</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="cont">
+		<div class="wrap">
+			<form class="cont-form">
+				<span class="form-title">
+					Compound Interest
+				</span>
+
+				<div class="wrap-input" data-validate="Principal is required">
+					<span class="label-input">Principal</span>
+					<input id="prin" class="input100" type="number" name="principal" placeholder="Enter principal amount">
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input" data-validate="Interest is required">
+					<span class="label-input">Interest rate (%)</span>
+					<input id="intr" class="input100" type="number" name="intr" placeholder="Enter interest rate">
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input input100-select">
+					<span class="label-input">Compounding</span>
+					<div>
+						<select id="compound" style="border: 0;" class="input100" name="time">
+							<option value="12">Monthly</option>
+							<option value="4">Quarterly</option>
+							<option value="2">Half-yearly</option>
+							<option value="1">Yearly</option>
+						</select>
+					</div>
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="wrap-input" data-validate="Term is required">
+					<span class="label-input">Term (yrs)</span>
+					<input id="term" class="input100" type="number" name="term" placeholder="Enter term">
+					<span class="focus-input"></span>
+				</div>
+
+				<div class="cont-btn">
+					<div class="wrap-btn">
+						<div class="bgbtn"></div>
+						<button id="sub" value="calc" class="form-btn">
+							<span>
+								Calculate
+							</span>
+						</button>
+					</div>
+				</div>
+				<div id="resdiv" style="display:none;" class="wrap-input">
+					<div id="outmsg" class="span-input"></div>
+					<div class="output" id="res"></div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
